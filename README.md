@@ -48,5 +48,12 @@ This command starts a container and maps port 80 of the container to port 8080 o
 ## Accessing the Application:
 After the container starts, you can access the application by navigating to http://localhost:8080/ in your web browser.
 
+## Credentials Access
+- ADMIN
+email: admin@example.com
+password: admin123
+- USER
+email: user@example.com
+password: password123
 
 
