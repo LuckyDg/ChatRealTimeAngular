@@ -30,7 +30,8 @@ Dadas las condiciones del problema, formulamos las siguientes ecuaciones:
 ## Método de Solución
 
 Utilizamos métodos algebraicos para resolver el sistema de ecuaciones:
-- Example:![image](https://github.com/LuckyDg/amor-incognito/assets/154240564/305dbe7d-3757-4c03-855b-3bb12075daad)
+- Example:![Captura de pantalla 2024-05-04 155300](https://github.com/LuckyDg/ChatRealTimeAngular/assets/154240564/d9559770-f7d7-48ee-b2af-88c3a0153aca)
+
 
 - **Paso 1: Expresar \( C \) en función de \( J \)**
   \[
