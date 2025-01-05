@@ -1,0 +1,23 @@
+services:
+  frontend:
+    build: ./Socket-Auth
+    ports:
+      - 80:80
+    depends_on:
+      - backend
+    networks:
+      - chat-realtime-network
+    environment:
+      - PORT=80
+
+  backend:
+    build: ./Socket_auth_realtime
+    ports:
+      - 3400:3400
+    networks:
+      - chat-realtime-network
+    environment:
+      - SECRET_KEY=your_secret_key
+
+networks:
+  chat-realtime-network:

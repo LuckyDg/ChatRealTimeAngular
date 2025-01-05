@@ -1,54 +1,26 @@
-# SocketAuth
+# Instrucciones para Ejecutar con Docker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+Para ejecutar esta aplicación utilizando Docker, sigue estos pasos:
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Running with Docker
-
-To run this application using Docker, follow these steps:
-
-1. **Cloning the Repository**:
-First, clone the repository to your local machine:
+### 1. **Clonar el Repositorio**
+Primero, clona el repositorio en tu máquina local ejecutando el siguiente comando:
 ```bash
 git clone https://github.com/LuckyDg/Socket-Auth
 ```
-2. **Building the Docker Image**:
-Navigate to the project directory and build the Docker image:
+2. **Construir la Imagen de Docker**:
+Navega al directorio del proyecto y construye la imagen de Docker ejecutando:
 ```bash
 cd tu-repositorio
-docker build -t socket-auth .
+docker compose up -d --build
 ```
-3. **Running the Docker Container**:
-Once the image is built, you can run it in a Docker container:
+Este comando iniciará el contenedor de Docker y mapeará el puerto 80 dentro del contenedor al puerto 80 de tu máquina local.
 
-```bash
-docker run -d -p 8080:80 exam-socket-auth
-```
-This command starts a container and maps port 80 of the container to port 8080 of your host machine.
-
-## Accessing the Application:
-After the container starts, you can access the application by navigating to http://localhost:8080/ in your web browser.
+## Acceder a la Aplicación
+Una vez que el contenedor esté en funcionamiento, puedes acceder a la aplicación en tu navegador web dirigiéndote a:
 
 ## Credentials Access
+Para acceder a la aplicación, usa las siguientes credenciales:
+
 - ADMIN
 email: admin@example.com
 password: admin123
@@ -56,4 +28,6 @@ password: admin123
 email: user@example.com
 password: password123
 
+## Imagen de Demo
 
+![Imagen Demo](./assets/image.png)

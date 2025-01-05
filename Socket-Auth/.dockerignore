@@ -1,0 +1,27 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de compilación y distribución de Angular
+/dist/
+out-tsc/
+*.log
+
+# Archivos y directorios de configuraciones locales
+/.idea/
+/.vscode/
+
+# Archivos de entorno (si los usas para desarrollo local)
+*.env
+
+# Archivos de Angular CLI
+.angular/
+
+# Ignorar configuraciones de tests
+/karma.conf.js
+/protractor.conf.js
+
+# Ignorar archivos de pruebas unitarias
+/src/**/*.spec.ts
+
+# Ignorar archivos de caché
+/.cache/
